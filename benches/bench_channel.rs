@@ -1,11 +1,11 @@
-use bench_crates::use_flume_mpmc;
-use bench_crates::use_flume_mpsc;
-use bench_crates::use_flume_spsc;
-use bench_crates::use_tokio_mpsc;
-use bench_crates::use_tokio_spsc;
-use bench_crates::DataProvider;
-use bench_crates::StringData;
-use bench_crates::U8Data;
+use bench_crates::channel::use_flume_mpmc;
+use bench_crates::channel::use_flume_mpsc;
+use bench_crates::channel::use_flume_spsc;
+use bench_crates::channel::use_tokio_mpsc;
+use bench_crates::channel::use_tokio_spsc;
+use bench_crates::channel::DataProvider;
+use bench_crates::channel::StringData;
+use bench_crates::channel::U8Data;
 use criterion::{criterion_group, criterion_main, Criterion};
 
 fn get_name<T: DataProvider>(name: &str) -> String {
